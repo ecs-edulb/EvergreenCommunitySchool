@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f5132">
+
+    <title>Welcome to ECS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="school-header">
+
+        <span class="header-dot dot-one"></span>
+        <span class="header-dot dot-two"></span>
+
+        <img
+            src="ecs-logo.png"
+            alt="Evergreen Community School logo"
+            class="school-logo"
+        >
+
+        <h1>Evergreen Community School</h1>
+        <br> <br>
+        <p>Crafting • Future • Leaders</p>
+
+    </header>
+
+    <main class="page-content">
+
+        <div id="levelBadge" class="level-badge"></div>
+
+        <!-- SEARCH PAGE -->
+
+        <section id="searchArea" class="search-area">
+
+            <p class="small-title">
+                FIRST DAY • PREMIER JOUR
+            </p>
+
+            <h2>
+                Welcome to ECS
+                <span>Bienvenue à l’ECS</span>
+            </h2>
+<br> <br>
+            <p class="instructions">
+                Enter your full name exactly as written in your school
+                registration.
+            </p>
+
+            <p class="instructions french-instruction">
+                Écris ton nom complet exactement comme dans ton inscription
+                scolaire.
+            </p>
+
+            <form id="searchForm">
+
+                <label for="studentName">
+                    Full name • Nom complet
+                </label>
+<br>
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="First name, father’s name and family name"
+                    autocomplete="off"
+                    required
+                >
+<br>
+                <button type="submit" class="search-button">
+                    Find my class • Trouver ma classe
+                </button>
+
+            </form>
+
+            <div id="errorMessage" class="error-message"></div>
+
+        </section>
+
+        <!-- STUDENT RESULT -->
+
+        <section
+            id="studentResult"
+            class="student-result"
+            aria-live="polite"
+        >
+
+            <span class="result-star star-one">✦</span>
+            <span class="result-star star-two">★</span>
+            <span class="result-star star-three">✦</span>
+
+            <p id="resultSmallTitle" class="result-small-title"></p>
+
+            <h2 id="studentWelcome"></h2>
+
+            <p id="welcomeMessage" class="welcome-message"></p>
+
+            <div class="information-list">
+
+                <div class="information-card">
+                    <div class="information-icon">🎓</div>
+
+                    <div class="information-text">
+                        <span
+                            id="departmentLabel"
+                            class="information-label"
+                        ></span>
+
+                        <span
+                            id="departmentValue"
+                            class="information-value"
+                        ></span>
+                    </div>
+                </div>
+
+                <div class="information-card">
+                    <div class="information-icon">📚</div>
+
+                    <div class="information-text">
+                        <span
+                            id="classLabel"
+                            class="information-label"
+                        ></span>
+
+                        <span
+                            id="classValue"
+                            class="information-value"
+                        ></span>
+                    </div>
+                </div>
+
+                <div class="information-card">
+                    <div class="information-icon">🏫</div>
+
+                    <div class="information-text">
+                        <span
+                            id="blockLabel"
+                            class="information-label"
+                        ></span>
+
+                        <span
+                            id="blockValue"
+                            class="information-value"
+                        ></span>
+                    </div>
+                </div>
+
+                <div class="information-card">
+                    <div class="information-icon">🪜</div>
+
+                    <div class="information-text">
+                        <span
+                            id="floorLabel"
+                            class="information-label"
+                        ></span>
+
+                        <span
+                            id="floorValue"
+                            class="information-value"
+                        ></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="classDirection" class="class-direction"></div>
+
+            <div id="motivationCard" class="motivation-card"></div>
+
+            <button
+                id="restartButton"
+                class="restart-button"
+                type="button"
+            ></button>
+
+        </section>
+
+        <footer class="page-footer">
+            Evergreen Community School
+            <br> 2026-2027
+        </footer>
+
+    </main>
+
+    <script src="StudentList.js"></script>
+
+</body>
+</html>
