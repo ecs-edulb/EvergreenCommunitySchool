@@ -288,7 +288,7 @@ const studentsByClass = {
 "Bassem Nabil Raya" ,
 "Daniel Wissam El Aridi" ,
 "Fatima Mahdi Awada" ,
-"Haissam Al Safadi" ,
+"Haissam Amir Al Safadi" ,
 "Hussein Ali Srour" ,
 "Jad Ahmad Ghader" ,
 "Jud Fouad Bazzi" ,
